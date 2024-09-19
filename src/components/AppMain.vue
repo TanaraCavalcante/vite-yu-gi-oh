@@ -1,7 +1,5 @@
 <script>
 import MainList from './MainList.vue';
-import MainListItem from './MainListItem.vue';
-
 
   export default {
     data() {
@@ -11,8 +9,6 @@ import MainListItem from './MainListItem.vue';
     },
     components:{
         MainList,
-        MainListItem,
-       
     }
 }
 </script>
@@ -23,7 +19,6 @@ import MainListItem from './MainListItem.vue';
     </div>
 
     <MainList/>
-    <MainListItem/>
     
 </template>
 

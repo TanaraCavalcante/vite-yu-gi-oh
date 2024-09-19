@@ -1,9 +1,14 @@
 <script>
+import MainListItem from './MainListItem.vue';
+
   export default {
     data() {
         return{
 
         }
+    },
+    components:{
+        MainListItem,
     }
 }
 </script>
@@ -12,12 +17,14 @@
     <section class="container">
       <h3>Main list</h3>
     </section>
+
+    <MainListItem/>
 </template>
 
 <style lang="scss" scoped>
     section {
         background-color: white;
-        margin: 30px;
-        margin-left: 85px;
+        margin-top: 10px;
+        margin-left: 80px;
     }
 </style>

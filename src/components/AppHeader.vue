@@ -9,13 +9,19 @@
 </script>
 
 <template>
-    <div>
-        <h1>Header</h1>
-    </div>
+   <header >
+       <img src="../assets/Yu-Gi-Oh!_(Logo).png" alt="logo yu-gi-oh">
+       <h2>Yu-Gi-Oh Api</h2>
+   </header>
 </template>
 
-<style scoped>
- h1{
-    color: red;
- }
+<style lang="scss" scoped>
+header{
+    background-color: White;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+
+}
 </style>

@@ -9,11 +9,15 @@
 </script>
 
 <template>
-    <div>
-        <h3>Main list</h3>
-    </div>
+    <section class="container">
+      <h3>Main list</h3>
+    </section>
 </template>
 
-<style scoped>
- 
+<style lang="scss" scoped>
+    section {
+        background-color: white;
+        margin: 30px;
+        margin-left: 85px;
+    }
 </style>

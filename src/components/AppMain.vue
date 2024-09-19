@@ -16,9 +16,8 @@ import MainListItem from './MainListItem.vue';
 </script>
 
 <template>
-   
-    <div>
-        <h1>Main</h1>
+    <div class="container">
+    <input type="text">
     </div>
 
     <MainList/>
@@ -26,8 +25,9 @@ import MainListItem from './MainListItem.vue';
 </template>
 
 <style scoped>
-    h1{
-        color: blue;
-    }
+
+   div{
+    margin-top: 10px;
+   }
  
 </style>

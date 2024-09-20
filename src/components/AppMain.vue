@@ -6,7 +6,7 @@ import axios from "axios";
     data() {
         return{
             cardList: [],
-            apiUrl:"https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=400",
+            apiUrl:"https://db.ygoprodeck.com/api/v7/cardinfo.php?num=25&offset=200",
         }
     },
     components:{
@@ -38,11 +38,11 @@ import axios from "axios";
 </script>
 
 <template>
-    <div class="container">
+    <div class="container text-center">
          <input type="text">
     </div>
 
-    <MainList/>
+    <MainList :cards="cardList"/>
     
 </template>
 

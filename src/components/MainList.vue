@@ -9,13 +9,19 @@ import MainListItem from './MainListItem.vue';
     },
     components:{
         MainListItem,
+    },
+    props: {
+        cards: {
+            type: Array,
+            required: true,
+        }
     }
 }
 </script>
 
 <template>
     <section class="container">
-      <h3>Main list</h3>
+      <h3 class="text-center">Nel totale ci sono {{ cards.length }} cards!</h3>
     </section>
 
     <MainListItem/>

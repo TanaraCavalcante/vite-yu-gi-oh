@@ -4,23 +4,39 @@
         return{
 
         }
+    },
+    props: {
+        card:{
+            type: Object,
+            required: true,
+        }
     }
 }
 </script>
 
 <template>
-    <section class="container" id="card">
-      <div class="card" style="width: 70px;" v-for="(item,i) in 20" :key="i">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> {{ item }}</h5>
-            <p class="card-text">descricao</p>
-        </div>
-     </div>
-    </section>
+   <section class="container">
+    <div class="border">
+        <img :src="card.card_images[0].image_url" alt="">
+        <h3> {{ card.name }}</h3>
+        <p>{{ card.race }}</p>
+    </div>
+  </section>
 </template>
 
-<style lang="scss" scoped>
-    
+<style scoped>
+  section{
+    width: calc(100% / 4);
+    background-color: white;
+    padding-top: 5px;
 
+    h3{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+  }
 </style>

@@ -21,17 +21,22 @@ import MainListItem from './MainListItem.vue';
 
 <template>
     <section class="container">
-      <h3 class="text-center">Nel totale ci sono {{ cards.length }} cards!</h3>
+      <p>Found {{ cards.length }} cards!</p>
     </section>
 
-    <MainListItem/>
+    <MainListItem v-for="cardItem in cards" :key="cardItem.id" :card="cardItem"/>
 </template>
 
 <style lang="scss" scoped>
     section {
-        background-color: white;
         margin-top: 10px;
-        margin-left: 80px;
-        
+
+        p{
+            font-size: 12px;
+            text-align: left;
+            color: white;
+            background-color: #212429;
+            padding: 5px;
+        }
     }
 </style>

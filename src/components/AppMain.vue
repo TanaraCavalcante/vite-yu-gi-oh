@@ -38,18 +38,11 @@ import axios from "axios";
 </script>
 
 <template>
-    <div class="container text-center">
-         <input type="text">
-    </div>
 
     <MainList :cards="cardList"/>
     
 </template>
 
 <style scoped>
-
-   div{
-    margin-top: 10px;
-   }
  
 </style>

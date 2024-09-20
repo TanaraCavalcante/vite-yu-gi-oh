@@ -10,18 +10,20 @@
 
 <template>
    <header >
-       <img src="../assets/Yu-Gi-Oh!_(Logo).png" alt="logo yu-gi-oh">
-       <h2>Yu-Gi-Oh Api</h2>
+       <div class="d-flex align-items-center">
+            <img src="../assets/Yu-Gi-Oh!_(Logo).png" alt="logo yu-gi-oh">
+            <h2>Yu-Gi-Oh Api</h2>
+       </div>
+       <input type="text" placeholder=" search a card">
    </header>
 </template>
 
 <style lang="scss" scoped>
 header{
     background-color: White;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    padding-left: 0;
-
+    justify-content: space-between;
 }
 </style>

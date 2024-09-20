@@ -38,7 +38,7 @@ import axios from "axios";
 </script>
 
 <template>
-
+    
     <MainList :cards="cardList"/>
     
 </template>

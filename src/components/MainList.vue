@@ -21,22 +21,23 @@ import MainListItem from './MainListItem.vue';
 
 <template>
     <section class="container">
-      <p>Found {{ cards.length }} cards!</p>
+        <p >Found {{ cards.length }} cards!</p>
     </section>
 
-    <MainListItem v-for="cardItem in cards" :key="cardItem.id" :card="cardItem"/>
+    <MainListItem v-for="cardItem in cards" :key="cardItem.id" :card="cardItem" class="container"/>
 </template>
 
 <style lang="scss" scoped>
     section {
-        margin-top: 10px;
+        margin-left: 20px;
 
         p{
             font-size: 12px;
-            text-align: left;
             color: white;
             background-color: #212429;
             padding: 5px;
+            margin-top: 10px;
+            
         }
     }
 </style>

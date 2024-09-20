@@ -15,8 +15,8 @@
 </script>
 
 <template>
-   <section class="container">
-    <div class="border">
+   <section>
+    <div>
         <img :src="card.card_images[0].image_url" alt="">
         <h3> {{ card.name }}</h3>
         <p>{{ card.race }}</p>
@@ -26,17 +26,33 @@
 
 <style scoped>
   section{
-    width: calc(100% / 4);
+    padding-top: 15px;
+    width: 240px;
+    height: 420px;
+    display: inline-block;
     background-color: white;
-    padding-top: 5px;
+    margin-bottom: 5px;
+    
 
-    h3{
-        font-size: 1.3rem;
-        text-align: center;
-    }
+    div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
 
-    p{
+
+        h3{
+        padding-top: 5px;
+        font-size: 1rem;
         text-align: center;
+
+        }
+
+        p{
+        text-align: center;
+        font-size: 14px;
+        }
     }
+   
   }
 </style>

@@ -10,11 +10,11 @@
 
 <template>
     <section class="container" id="card">
-      <div class="card" style="width: 70px;" v-for="(item,i) in 30" :key="i">
+      <div class="card" style="width: 70px;" v-for="(item,i) in 20" :key="i">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title"> {{ item }}</h5>
-            <p class="card-text"></p>
+            <p class="card-text">descricao</p>
         </div>
      </div>
     </section>

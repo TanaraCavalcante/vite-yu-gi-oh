@@ -6,7 +6,7 @@ import axios from "axios";
     data() {
         return{
             cardList: [],
-            apiUrl:"//db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=100",
+            apiUrl:"https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=400",
         }
     },
     components:{
@@ -14,10 +14,12 @@ import axios from "axios";
     },
     methods:{
         getCardList(){
-            axios.get('/user?ID=12345')
-            .then(function (response) {
+            console.log("chiamata API iniziata");
+            axios.get(this.apiUrl)
+            .then((response) => {
              // handle success
-             console.log(response);
+             console.log(response.data.data);
+             this.cardList = response.data.data;
             })
             .catch(function (error) {
              // handle error
@@ -25,15 +27,19 @@ import axios from "axios";
              })
             .finally(function () {
               // always executed
+              console.log('Chiamara api terminata!')
             });
          }
+    },
+    created(){
+        this.getCardList()
     }
 }
 </script>
 
 <template>
     <div class="container">
-    <input type="text">
+         <input type="text">
     </div>
 
     <MainList/>

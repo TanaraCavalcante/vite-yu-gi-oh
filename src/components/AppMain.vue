@@ -6,6 +6,7 @@ import axios from "axios";
     data() {
         return{
             cardList: [],
+            apiUrl:"//db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=100",
         }
     },
     components:{

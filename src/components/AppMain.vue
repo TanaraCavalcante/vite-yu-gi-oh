@@ -2,6 +2,7 @@
 import MainList from './MainList.vue';
 import axios from "axios";
 
+
   export default {
     data() {
         return{
@@ -11,6 +12,7 @@ import axios from "axios";
     },
     components:{
         MainList,
+     
     },
     methods:{
         getCardList(){
@@ -40,7 +42,6 @@ import axios from "axios";
 <template>
     
     <MainList :cards="cardList"/>
-    
 </template>
 
 <style scoped>
